@@ -1,66 +1,60 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# MDPI Article Scraper and Viewer
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Project Overview
 
-## About Laravel
+This project combines a Java-based web scraper with a Laravel PHP web application to search, scrape, and display articles from the MDPI (Multidisciplinary Digital Publishing Institute) platform.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Search for articles on MDPI using keywords
+- Specify the number of articles to scrape
+- Scrape article details including title, authors, abstract, and more
+- Store scraped data in a SQL database
+- Display scraped articles in a web interface
+- View detailed information for each article
+- Link to original MDPI articles
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Technology Stack
 
-## Learning Laravel
+- Backend Scraper: Java
+- Web Frontend: Laravel (PHP)
+- Database: SQL
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## How It Works
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1. **User Input**: Users enter a search query and the number of articles to scrape through a Laravel-based web interface.
+2. **Data Storage**: The search request is saved in the `search_requests` table in the database.
+3. **Java Scraper**: The Java application retrieves the search request from the database and uses it to scrape articles from MDPI.
+4. **Article Storage**: Scraped articles are saved in the `articles` table in the database.
+5. **Article Display**: The Laravel application retrieves and displays the scraped articles in a user-friendly web interface.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Setup and Installation
 
-## Laravel Sponsors
+[Include instructions for setting up both the Java scraper and Laravel application, including database configuration]
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Usage
 
-### Premium Partners
+1. Navigate to the search page in the Laravel application.
+2. Enter your search query and the number of articles you want to scrape.
+3. Submit the form to initiate the scraping process.
+4. View the scraped articles on the results page.
+5. Click on an article to view its details.
+6. Use the "View in origin site" button to access the full article on MDPI.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Project Structure
+
+[Briefly describe the structure of your project, including key directories and files for both Java and Laravel components]
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+[Include guidelines for contributing to your project]
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+[Specify the license under which your project is released]
+
+## Contact
+
+Mosbah Messaoud - [Your contact information]
+
+Project Link: [Your GitHub repository URL]
